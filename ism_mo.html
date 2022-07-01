@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>통합 매출 관리 시스템</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <link type="text/css" rel="stylesheet" href="css/base.css" />
+        <link type="text/css" rel="stylesheet" href="css/common_1.css" />
+        <link type="text/css" rel="stylesheet" href="css/ism_mo.css" />
+        
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body style="background: #e1d8d854;">
+        <!-- wrap -->
+        <div id="wrap">
+            <!-- header -->
+            <div class="ism_header">
+                <!-- headerInner -->
+                <div class="headerInner clearfix">
+                    <span style="font-size: 20px; color: #fff; font-weight: bold; line-height: 70px;">
+                        <span>통합 매출 관리 시스템(ISM)</span>
+                    </span>
+                    <button class="btn_nav">
+                        <span>메뉴닫기</span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="ism_topmenu">
+                        <div class="navInner">
+                            <ul class="gnb">
+								<li>
+									<a href="#">판매 통계<span></span></a>
+									<div class="subMenu">
+										<a href="#">- 판매 내역</a>
+										<a href="#">- 통합 판매 집계</a>
+										<a href="#">- 품목 리스트</a>
+									</div>
+								</li>
+								<li style="margin-top: 10px;">
+									<a href="#">판매 관리<span></span></a>
+									<div class="subMenu">
+										<a href="#">- 판매 업로드</a>
+										<a href="#">- 판매 내역 작업</a>
+										<a href="#">- 재고 반영</a>
+									</div>
+								</li>
+							</ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- // headerInner -->
+            </div>
+            <!-- // header -->
+            
+            <!-- content -->
+            <div class="page-wrapper" style="padding: 4px;">
+                <span class="ism_order">통합 판매 집계</span>
+                <div class="ism_Inp_wrap">
+                    <div class="ism_total_input">
+                        <ul class="ism_ShipInp">
+                            <li style="display: table;">
+                                <div class="ism_topSub_2" style="padding-left: 0;">
+                                    <input type="checkbox" id="chkBox_1" checked>
+                                    <label for="chkBox_1"><span>판매유형</span></label>
+                                </div>
+                                <div class="ism_topSub_2">
+                                    <input type="checkbox" id="chkBox_2">
+                                    <label for="chkBox_2"><span>판매유형</span></label>
+                                </div>
+                                <div class="ism_topSub_2">
+                                    <input type="checkbox" id="chkBox_3">
+                                    <label for="chkBox_3"><span>판매유형</span></label>
+                                </div>
+                            </li>
+                            <li class="ism_ShipInp_inner">
+                                <div class="ism_radio_box">
+                                    <input type="radio" id="same" name="q1" checked="">
+                                    <label for="same" class="ism_sameR">상품코드로 검색</label>
+                                    <input type="radio" id="new" name="q1">
+                                    <label for="new" class="ism_sameR">품목코드로 검색</label>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="OdrName" class="ism_hide">상품코드로 검색</label>
+                                <input type="text" id="OdrName" placeholder="상품코드로 검색">
+                            </li>
+                            <li>
+                                <select class="blm_select">
+                                    <option value="010" selected="">카테고리선택
+                                    </option>
+                                    <option value="">화장품</option>
+                                    <option value="">패션잡화</option>
+                                    <option value="">패션의류</option>
+                                    <option value="">캠핑</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="date" style="padding: 0 16px; width: 50% !important; flex: unset;">&nbsp;~&nbsp;
+                                <input type="date" style="padding: 0 16px; width: 50% !important; flex: unset;">
+                            </li>
+                        </ul>
+                        <div class="wms_searchBtn">
+                            <a href="#" class="ism_btnSearch" name="btnSearch">검색</a>
+                            <a href="#" class="ism_btnSearch" name="btnSearch">검색</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content clearfix">
+                    <div style="border-top:2px solid #796061;">
+                        <table cellpadding="0" cellspacing="0" border="0" class="ism_display" >
+                            <thead>
+                                <tr>
+                                    <th>주문일시</th>
+                                    <th>주문번호</th>
+                                    <th>판매유형</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639054</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639093</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639094</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639053</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639054</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639093</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639094</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639053</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639054</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639093</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639094</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639053</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639054</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639093</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639094</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639053</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639054</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639093</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639094</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639053</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639054</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639093</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639094</td>
+                                    <td>온라인</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-04-26 화</td>
+                                    <td>2639053</td>
+                                    <td>온라인</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- // content -->
+
+            <!-- top 버튼 -->
+            <a href="#" class="ism_top" style="width:47px; height:43px; line-height:40px; position:fixed; right:23px; bottom:25px; background-color:#fff; border-radius:50%; box-sizing:border-box; transform: translateX(100px); z-index: 9999;">
+                <img src="m/images/common/top.png" alt="top" style="width:100%; object-fit:cover; margin:-4px 0 0;">
+            </a>
+            <!-- // top 버튼 -->
+
+            <p class="hide"><strong>Pagination</strong></p>
+            <div style="position: relative;">
+    			<ul class="pagination">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item next"><a class="page-link" href="#">&gt;</a></li>
+                    <li class="page-item next-page"><a class="page-link" href="#">&gt;&gt;</a></li>
+                </ul>    		
+            </div>
+
+        </div>
+        <!-- // wrap -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+    
+                var lnb = $('.page-wrapper').offset().top;
+                $(window).scroll(function(){
+                    var window = $(this).scrollTop();
+                    if(lnb <= window) {
+                    $('.ism_top').css({
+                            transform: 'translateX(0)',
+                            transition: 'all .4s'
+                        });
+                    } else {
+                        $('.ism_top').css({
+                            transform: 'translateX(100px)'
+                        });
+                    }
+                });
+                
+                
+                $('.btn_nav').click(function(){
+                    $(this).toggleClass('on');
+                    $('.ism_topmenu').toggleClass('active');
+                    $('html,body').toggleClass('not-scroll');
+                });
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
