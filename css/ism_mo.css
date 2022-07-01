@@ -4,7 +4,7 @@
 .ism_display th,
 .ism_display td{ padding:12px 10px 12px 16px; line-height:16px; border-bottom:1px solid #dadada; text-align: center; vertical-align: middle; font-weight: 300; font-size: 12px; color: #333; }
 .ism_display thead th { background:#cec7c7; font-weight:500; font-size: 14px; }
-table tbody tr:nth-child(odd) { background-color: #f9f9f9;}
+table tbody tr:nth-child(odd) { background-color: #f9f9f9; }
 
 .ism_header { position:relative; top:0; left:0; right:0;  width:100%; height:70px; z-index:90; background: #d16a0d; }
 .ism_header.fixed { transition:.5s; width:100%; position:fixed; left:0; top:0; z-index:100; transform:translateZ(0); -webkit-transform:translateZ(0); }
